@@ -149,6 +149,7 @@ pub mod storage;
 pub use self::middleware::SessionMiddleware;
 pub use self::session::{Session, SessionGetError, SessionInsertError, SessionStatus};
 pub use self::session_ext::SessionExt;
+pub use session::{SessionState, UserType};
 
 #[cfg(test)]
 pub mod test_helpers {

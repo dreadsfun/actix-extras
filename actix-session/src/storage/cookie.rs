@@ -4,8 +4,9 @@ use actix_web::cookie::time::Duration;
 use anyhow::Error;
 
 use super::SessionKey;
+use crate::session::SessionState;
 use crate::storage::{
-    interface::{LoadError, SaveError, SessionState, UpdateError},
+    interface::{LoadError, SaveError, UpdateError},
     SessionStore,
 };
 

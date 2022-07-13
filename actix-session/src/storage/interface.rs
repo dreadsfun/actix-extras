@@ -1,11 +1,8 @@
-use std::collections::HashMap;
-
 use actix_web::cookie::time::Duration;
 use derive_more::Display;
 
 use super::SessionKey;
-
-pub(crate) type SessionState = HashMap<String, String>;
+use crate::session::SessionState;
 
 /// The interface to retrieve and save the current session data from/to the chosen storage backend.
 ///
